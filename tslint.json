@@ -1,0 +1,79 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-prettier", "tslint-react"],
+  "linterOptions": {
+    "exclude": [
+      "client/types/*.ts"
+    ]
+  },
+  "rules": {
+    "ban-types": false,
+    "no-console": [false],
+    "jsx-no-lambda": false,
+    "jsx-equals-spacing": [true, "never"],
+    "jsx-curly-spacing": [false, "never"],
+    "jsx-no-multiline-js": false,
+    "prefer-for-of": false,
+    "no-empty": [true, "allow-empty-catch"],
+    "no-unused-variable": true,
+    "no-shadowed-variable": false,
+    "forin": false,
+    "indent": [true, "spaces", 4],
+    "quotemark": [true, "single", "jsx-double"],
+    "interface-over-type-literal": false,
+    "interface-name": [true, "never-prefix"],
+    "array-type": [true, "array-simple"],
+    "whitespace": [true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "max-line-length": [true, 120],
+    "member-ordering": false,
+    "no-implicit-dependencies": false,
+    "no-object-literal-type-assertion": false,
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "prefer-object-spread": true,
+    "strict-boolean-expressions": false,
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "trailing-comma": [false],
+    "align": [true, "elements", "members", "parameters", "statements"],
+    "triple-equals": [true],
+    "no-any": false,
+    "ordered-imports": false,
+    "no-submodule-imports": false,
+    "import-name": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ]
+  }
+}

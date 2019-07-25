@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2016",
+    "module": "esnext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "keyofStringsOnly": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "outDir": "./dist.dev/",
+    "lib": [
+      "esnext.asynciterable",
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "helpers/*": [
+        "src/helpers/*"
+      ],
+      "config/*": [
+        "src/config/*"
+      ],
+      "api/*": [
+        "src/api/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
